@@ -1,11 +1,9 @@
-import express from "express";
-import cors from "cors";
-import multer from "multer";
-import dayjs from 'dayjs';
-import MethodOverride from 'method-override'
-import {
-    v4 as uuid
-} from "uuid";
+const express = require("express");
+const cors = require("cors");
+const multer = require("multer");
+const dayjs = require('dayjs');
+const MethodOverride = require('method-override');
+const { v4: uuidv4 } = require('uuid');
 
 const server = express();
 const log = console.log;
